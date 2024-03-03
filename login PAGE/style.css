@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Hide any overflowing video */
+}
+
+#background-video {
+    position: fixed; /* Fixes the video to the viewport */
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 90%;
+    object-fit: cover;
+    z-index: -1; /* Puts the video behind other content */
+}
+
+.first {
+    width: 349px;
+    height: 400px; /* Change height to 'auto' to accommodate the form's content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Add some padding for spacing */
+    background-color: rgba(42, 44, 44, 0.7); /* Add transparency to the background color */
+    backdrop-filter: blur(5px); /* Apply blurry effect */
+}
+
+.login-form {
+    text-align: center;
+    max-width: 300px; /* Adjust the width of the form as needed */
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px; /* Adjust spacing */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #b3b4b0;
+    border-radius: 4px;
+    background-color: rgb(199, 193, 192);
+}
+
+button {
+    background-color: rgb(28, 76, 251); /* Change to the desired button background color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 17px;
+    width: 200px;
+    font-weight: bold; /* Make button text bold */
+}
+
+button:hover {
+    background-color: #fbfb0a; /* Change to the desired button background color on hover */
+}
+
+.usericon {
+    margin-top: -440px;
+}
+
+#pass {
+    text-decoration: none;
+    color: #b3b4b0;
+    margin-top: 30px;
+}
+
+#new {
+    text-decoration: none;
+    color: #b3b4b0;
+    margin-top: 20px; /* Adjust spacing */
+}

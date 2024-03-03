@@ -1,0 +1,121 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    position: relative; /* Set position to enable z-index for background animation */
+    overflow: hidden; /* Hide overflow to prevent scrollbar due to absolute positioning of stars */
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+img {
+    width: 200px;
+    margin: 40px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+    color: #4caf50;
+}
+
+.animated-text {
+    font-size: 2em;
+    color: #4caf50;
+    animation: bounceAndColor 1.5s ease-in-out infinite;
+}
+
+@keyframes bounceAndColor {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+        color: #4caf50;
+    }
+    40% {
+        transform: translateY(-20px);
+        color: #ffcc00;
+    }
+    60% {
+        transform: translateY(-10px);
+        color: #ffcc00;
+    }
+}
+
+.animated-text2 {
+    font-size: 2em;
+    color: #4caf50;
+    animation: bounceAndColor2 1.5s ease-in-out infinite;
+}
+
+@keyframes bounceAndColor2 {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+        color: #f52c8a;
+    }
+    40% {
+        transform: translateY(-20px);
+        color: #ff0051;
+    }
+    60% {
+        transform: translateY(-10px);
+        color: #ffcc00;
+    }
+}
+
+/* Add styles for the falling cubes */
+.falling-cube {
+    width: 10px;  /* Adjust the width as needed */
+    height: 10px;  /* Adjust the height as needed */
+    position: absolute;
+    animation: fall 5s linear ;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Add the animated-text styles */
+.animated-text {
+    font-size: 2em;
+    color: #4caf50;
+    animation: bounceAndColor 1.5s ease-in-out infinite;
+}
+
+@keyframes bounceAndColor {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+        color: #4caf50;
+    }
+    40% {
+        transform: translateY(-20px);
+        color: #ffcc00;
+    }
+    60% {
+        transform: translateY(-10px);
+        color: #ffcc00;
+    }
+}
